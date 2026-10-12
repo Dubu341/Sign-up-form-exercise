@@ -15,7 +15,7 @@
           alt="pretty image of a door"
         />
         <div class="logo">
-          <img src="images/odin-lined.png" alt="logo" />
+          <img class="odinlogo" src="images/odin-lined.png" alt="logo" />
           <p class="logo-text">ODIN</p>
         </div>
         <p class="img-src">
@@ -26,49 +26,67 @@
       </div>
 
       <div class="form-content">
-        <header>
+        <header class="header">
           <h1>
             This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dream. Sign up
-            <em>now</em> to get started.
+            this in your life to help you realize your deepest dream.
+            <p>Sign up <em>now</em> to get started.</p>
           </h1>
-          <h1>You <em>know</em> you want to.</h1>
+          <h1 class="cheeky">You <em>know</em> you want to.</h1>
         </header>
-        <form id="sign-up" action="" method="get">
-          <div>
-            <label for="fname">FIRST NAME</label>
-            <input type="text" id="fname" name="first-name" required />
-          </div>
-          <div>
-            <label for="lname">LAST NAME</label>
-            <input type="text" id="lname" name="last-name" />
-          </div>
-          <div>
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div>
-            <label for="tel">PHONE NUMBER</label>
-            <input
-              type="tel"
-              id="tel"
-              name="phone-number"
-              pattern="[0-9]{10}"
-              required
-            />
-          </div>
-          <div>
-            <label for="pwd">PASSWORD</label>
-            <input type="password" name="password" id="pwd" required />
-          </div>
-          <div>
-            <label for="confirm-pwd">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              name="confirm-pwd"
-              id="confirm-pwd"
-              required
-            />
+        <form id="sign-up" action="" method="get" class="sign-up-form">
+          <legend>Let's do this!</legend>
+          <div class="input-container">
+            <div class="name">
+              <div>
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="first-name" required />
+              </div>
+              <div>
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="last-name" />
+              </div>
+            </div>
+            <div class="contact-info">
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="tel">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="phone-number"
+                  pattern="[0-9]{10}"
+                  required
+                />
+              </div>
+            </div>
+            <div class="password">
+              <div>
+                <label for="pwd">PASSWORD</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="pwd"
+                  pattern=".{8,}"
+                  title="Minimum 8 characters"
+                  required
+                />
+              </div>
+              <div>
+                <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirm-pwd"
+                  id="confirm-pwd"
+                  pattern=".{8,}"
+                  title="Minimum 8 characters"
+                  required
+                />
+              </div>
+            </div>
           </div>
         </form>
         <button type="submit" form="sign-up">Create Account</button>

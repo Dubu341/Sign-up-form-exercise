@@ -8,13 +8,20 @@
 }
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
 }
 .container {
   display: flex;
-  align-items: center;
 }
 .side-bar {
   height: 100vh;
+  position: relative;
   display: flex;
 }
 
@@ -25,7 +32,7 @@
   font-family: "norse-bold";
   font-size: 5em;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 630px;
+  width: 630px; /*figure out a fix */
   top: 5px;
   position: absolute;
   top: 170px;
@@ -45,4 +52,69 @@
 }
 .logo > img {
   width: 90px;
+}
+
+.header {
+  background-color: #f6f7f8;
+  padding: 40px;
+  padding-bottom: 60px;
+  padding-top: 180px;
+}
+h1 {
+  width: min(75ch, 60%);
+}
+.cheeky {
+  margin-top: 24px;
+}
+.sign-up-form {
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.2em;
+}
+.sign-up-form > legend {
+  font-size: 1.7rem;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name {
+  display: flex;
+  gap: 40px;
+}
+.contact-info {
+  display: flex;
+  gap: 40px;
+}
+.password {
+  display: flex;
+  gap: 40px;
+}
+label,
+input {
+  display: flex;
+}
+
+.sign-up-form input[type="text"],
+.sign-up-form input[type="email"],
+.sign-up-form input[type="tel"],
+.sign-up-form input[type="password"] {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #d6d9dc;
+  width: 300px;
+}
+.sign-up-form input:focus {
+  border: 1px solid #0066cc;
+  background-color: #f0f7ff;
+  outline: none;
+}
+.sign-up-form input[type="password"]:invalid {
+  border: 1px solid red;
+  outline: none;
 }
