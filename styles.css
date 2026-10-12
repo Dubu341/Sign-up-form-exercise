@@ -21,8 +21,9 @@ body {
 }
 .side-bar {
   height: 100vh;
-  position: relative;
+  width: auto;
   display: flex;
+  position: relative;
 }
 
 .logo {
@@ -32,7 +33,7 @@ body {
   font-family: "norse-bold";
   font-size: 5em;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 630px; /*figure out a fix */
+  width: 100%;
   top: 5px;
   position: absolute;
   top: 170px;
@@ -40,7 +41,7 @@ body {
 .logo-text {
   color: white;
 }
-.img-src {
+.img-credit {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,6 +49,9 @@ body {
   width: 630px;
   position: absolute;
   bottom: 0px;
+  color: white;
+}
+.img-credit > a:visited {
   color: white;
 }
 .logo > img {
@@ -64,6 +68,7 @@ h1 {
   width: min(75ch, 60%);
 }
 .cheeky {
+  /*space between the header text*/
   margin-top: 24px;
 }
 .sign-up-form {
