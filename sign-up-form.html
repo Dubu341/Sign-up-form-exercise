@@ -6,5 +6,48 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dream. Sign up
+        <em>now</em> to get started.
+      </h1>
+      <h1>You <em>know</em> you want to.</h1>
+    </header>
+    <form id="sign-up" action="" method="get">
+      <div>
+        <label for="fname">FIRST NAME</label>
+        <input type="text" id="fname" name="first-name" required />
+      </div>
+      <div>
+        <label for="lname">LAST NAME</label>
+        <input type="text" id="lname" name="last-name" />
+      </div>
+      <div>
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="tel">PHONE NUMBER</label>
+        <input
+          type="tel"
+          id="tel"
+          name="phone-number"
+          pattern="[0-9]{10}"
+          required
+        />
+      </div>
+      <div>
+        <label for="pwd">PASSWORD</label>
+        <input type="password" name="password" id="pwd" required />
+      </div>
+      <div>
+        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+        <input type="password" name="confirm-pwd" id="confirm-pwd" required />
+      </div>
+    </form>
+    <button type="submit" form="sign-up">Create Account</button>
+    <p>Already have an account? <a href="" target="_blank">Log in</a></p>
+  </body>
 </html>
